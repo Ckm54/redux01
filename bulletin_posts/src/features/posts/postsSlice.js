@@ -63,7 +63,8 @@ export const updatePost = createAsyncThunk('posts/updatePost', async(initialPost
     const response = await axios.put(`${POSTS_URL}/${id}`, initialPost)
     return response.data;
   } catch (error) {
-    return error.message;
+    // return error.message;
+    return initialPost; // TEST FEATURE ONLY
   }
 });
 
