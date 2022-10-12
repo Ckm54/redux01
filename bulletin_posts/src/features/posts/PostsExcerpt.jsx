@@ -4,7 +4,7 @@ import TimeAgo from './TimeAgo';
 import ReactionButtons from './ReactionButtons';
 import { Link } from 'react-router-dom';
 
-const PostsExcerpt = ({ post }) => {
+let PostsExcerpt = ({ post }) => {
   return (
     <article>
       <h3>{post.title}</h3>
@@ -18,5 +18,8 @@ const PostsExcerpt = ({ post }) => {
     </article>
   )
 }
+
+// prevent component from re-render if its props does not change
+PostsExcerpt = React.memo(PostsExcerpt);
 
 export default PostsExcerpt
