@@ -4,13 +4,13 @@
       "userId": 1,
       "id": 1,
       "title": "delectus aut autem",
-      "completed": true
+      "completed": false
     },
     {
       "userId": 1,
       "id": 4,
       "title": "et porro tempora",
-      "completed": true
+      "completed": false
     },
     {
       "userId": 1,
@@ -1175,6 +1175,18 @@
       "title": "New todo!",
       "completed": false,
       "id": 201
+    },
+    {
+      "userId": 1,
+      "title": "newTodo",
+      "completed": false,
+      "id": 202
+    },
+    {
+      "userId": 1,
+      "title": "newTodo",
+      "completed": false,
+      "id": 203
     }
   ]
 }
