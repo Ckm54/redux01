@@ -48,7 +48,13 @@ const TodoList = () => {
   if (isLoading) {
     content = <p>Loading...</p>
   } else if (isSuccess) {
-    content = JSON.stringify(todos)
+    content = todos.map((todo) => (
+      <article key={todo.id}>
+        <div className="todo">
+          
+        </div>
+      </article>
+    ))
   } else if (isError) {
     content = <p>{error}</p>
   }
